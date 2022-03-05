@@ -1,0 +1,9 @@
+@use 'sass:map';
+
+
+$weights: ("light": 300, "medium": 500);
+
+h1{
+  font-weight: map-get($weights , 'light' );
+}
+
