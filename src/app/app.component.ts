@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Compiler, Component, Inject
   styles: [
     `
     @use 'sass:map';
-
+    $weights: ("light": 300, "medium": 500);
       h1{
         color: red;
         font-weight: map-get($weights , 'light' );
