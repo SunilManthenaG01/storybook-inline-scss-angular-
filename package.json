@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
-    "storybook": "npm run docs:json && start-storybook -p 6006",
+    "docs:json": "compodoc -p tsconfig.json --disableRoutesGraph -e json -d .",
+    "storybook": "ng run jasmine-test:storybook",
     "build-storybook": "npm run docs:json && build-storybook"
   },
   "private": true,
